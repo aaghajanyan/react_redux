@@ -1,8 +1,8 @@
 import * as reduxModule from "redux";
 
 import thunk from "redux-thunk";
-import reducers from "./reducers";
 import { applyMiddleware, compose, createStore } from "redux";
+import reducers from "./reducers";
 
 reduxModule.__DO_NOT_USE__ActionTypes.REPLACE = "@@redux/INIT";
 

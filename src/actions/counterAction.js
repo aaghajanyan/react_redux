@@ -1,23 +1,13 @@
-export const CounterAction = {
+export default {
+  incressNumber: (number) => dispatch => dispatch({
+    type: "INCRESS_NUMBER",
+    payload: number
+  }),
 
-
-  incressNumber: (number) => {
-    return dispatch => {
-      return dispatch({
-        type: "INCRESS_NUMBER",
-        payload: number
-      });
-    };
-  },
-
-  decressNumber: (number) => {
-    return dispatch => {
-      return dispatch({
-        type: "DECRESS_NUMBER",
-        payload: number
-      });
-    };
-  }
+  decressNumber: (number) => dispatch => dispatch({
+    type: "DECRESS_NUMBER",
+    payload: number
+  })
 };
 
 

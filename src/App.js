@@ -1,13 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Counter from 'components/Counter';
 import './App.scss';
-import { Counter } from './components/Counter';
-import { useSelector } from "react-redux";
 
 function App() {
-
-  const counter = useSelector(store => store.counter)
-
-  const [count, setCount] = useState(counter);
 
   return (
     <div className="App">
